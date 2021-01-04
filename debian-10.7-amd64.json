@@ -1,0 +1,102 @@
+{
+  "variables":
+    {
+      "cpu": "2",
+      "ram": "2048",
+      "name": "debian",
+      "disk_size": "40000",
+      "major_version": "10",
+      "minor_version": "7",
+      "version": "{{user `major_version`}}.{{user `minor_version`}}",
+      "iso_checksum_type": "sha256",
+      "iso_name": "debian-{{user `version`}}.0-amd64-netinst.iso",
+      "mirror": "https://mirrors.ustc.edu.cn/debian-cd",
+      "mirror_directory": "{{user `version`}}.0/amd64/iso-cd",
+      "iso_checksum": "md5:7227c779619e6c8a0a1b0f55d10c6270",
+      "headless": "true",
+      "config_file": "debian-preseed.cfg",
+      "name_template": "debian-{{user `version`}}-amd64",
+      "ssh_username": "root",
+      "ssh_password": "vagrant"
+    },
+  "builders": [
+    {
+      "name": "{{user `name`}}{{user `version`}}",
+      "type": "qemu",
+      "format": "qcow2",
+      "accelerator": "kvm",
+      "qemu_binary": "/usr/bin/qemu-system-x86_64",
+      "net_device": "virtio-net",
+      "disk_interface": "virtio",
+      "disk_cache": "none",
+      "qemuargs": [[ "-m", "{{user `ram`}}M" ],[ "-smp", "{{user `cpu`}}" ]],
+      "ssh_wait_timeout": "30m",
+      "http_directory": ".",
+      "http_port_min": 10082,
+      "http_port_max": 10089,
+      "ssh_host_port_min": 2222,
+      "ssh_host_port_max": 2229,
+      "ssh_username": "{{user `ssh_username`}}",
+      "ssh_password": "{{user `ssh_password`}}",
+      "iso_urls": "{{user `mirror`}}/{{user `mirror_directory`}}/{{user `iso_name`}}",
+      "iso_checksum": "{{user `iso_checksum`}}",
+      "boot_wait": "10s",
+      "boot_command": [
+                "<esc><wait>",
+                "auto <wait>",
+                "console-keymaps-at/keymap=us <wait>",
+                "console-setup/ask_detect=false <wait>",
+                "debconf/frontend=noninteractive <wait>",
+                "debian-installer=en_US <wait>",
+                "fb=false <wait>",
+                "install <wait>",
+                "kbd-chooser/method=us <wait>",
+                "keyboard-configuration/xkb-keymap=us <wait>",
+                "locale=en_US <wait>",
+                "netcfg/get_hostname={{user `name`}}{{user `version`}} <wait>",
+                "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/http/{{user `config_file`}} <wait>",
+                "<enter><wait>"
+      ],
+      "disk_size": "{{user `disk_size`}}",
+      "disk_discard": "unmap",
+      "disk_compression": true,
+      "headless": "{{user `headless`}}",
+      "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S shutdown -P now",
+      "output_directory": "builds/{{user `name`}}{{user `version`}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "execute_command": "{{.Vars}} bash '{{.Path}}'",
+      "inline": [
+        "echo \"deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main\" >> /etc/apt/sources.list",
+        "apt -y install dirmngr",
+        "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367",
+        "apt-get update",
+        "apt -y install ansible"
+        ]
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "ansible/playbook.yml",
+      "playbook_dir": "ansible"
+    },
+    {
+      "type": "shell",
+      "execute_command": "{{.Vars}} bash '{{.Path}}'",
+      "inline": [
+        "apt -y remove ansible",
+        "apt-get clean",
+        "apt-get -y autoremove --purge"
+      ]
+    }
+  ],
+  "post-processors": [
+      {
+          "keep_input_artifact": true,
+          "output": "builds/{{user `name_template`}}-{{.Provider}}.box",
+          "type": "vagrant"
+      }
+  ]
+}

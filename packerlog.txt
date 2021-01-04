@@ -1,0 +1,159 @@
+2021/01/04 18:19:44 [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: 
+2021/01/04 18:19:44 Deleting kv.Value: debian-preseed.cfg
+2021/01/04 18:19:44 Deleting kv.Value: 2
+2021/01/04 18:19:44 Deleting kv.Value: 40000
+2021/01/04 18:19:44 Deleting kv.Value: true
+2021/01/04 18:19:44 Deleting kv.Value: md5:7227c779619e6c8a0a1b0f55d10c6270
+2021/01/04 18:19:44 Deleting kv.Value: sha256
+2021/01/04 18:19:44 Deleting kv.Value: 10
+2021/01/04 18:19:44 Deleting kv.Value: 7
+2021/01/04 18:19:44 Deleting kv.Value: https://mirrors.ustc.edu.cn/debian-cd
+2021/01/04 18:19:44 Deleting kv.Value: debian
+2021/01/04 18:19:44 Deleting kv.Value: 2048
+2021/01/04 18:19:44 Deleting kv.Value: vagrant
+2021/01/04 18:19:44 Deleting kv.Value: root
+2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
+2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-qemu"}
+2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
+2021/01/04 18:19:44 packer-builder-qemu plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 packer-builder-qemu plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 packer-builder-qemu plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 packer-builder-qemu plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-builder-qemu plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-builder-qemu plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 packer-builder-qemu plugin: args: []string{"packer-builder-qemu"}
+2021/01/04 18:19:44 packer-builder-qemu plugin: Plugin address: unix /tmp/packer-plugin605400460
+2021/01/04 18:19:44 packer-builder-qemu plugin: Waiting for connection...
+2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin605400460
+2021/01/04 18:19:44 packer-builder-qemu plugin: Serving a plugin connection...
+2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
+2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
+2021/01/04 18:19:44 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin261968729
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Waiting for connection...
+2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin261968729
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Serving a plugin connection...
+2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
+2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-ansible-local"}
+2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: args: []string{"packer-provisioner-ansible-local"}
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Plugin address: unix /tmp/packer-plugin638045893
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Waiting for connection...
+2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin638045893
+2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Serving a plugin connection...
+2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
+2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
+2021/01/04 18:19:44 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin413399077
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Waiting for connection...
+2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin413399077
+2021/01/04 18:19:44 packer-provisioner-shell plugin: Serving a plugin connection...
+2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
+2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-post-processor-vagrant"}
+2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: args: []string{"packer-post-processor-vagrant"}
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Plugin address: unix /tmp/packer-plugin789006951
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Waiting for connection...
+2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin789006951
+2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Serving a plugin connection...
+2021/01/04 18:19:44 Preparing build: debian10.7
+2021/01/04 18:19:44 packer-builder-qemu plugin: use specified accelerator: kvm
+2021/01/04 18:19:44 packer-builder-qemu plugin: MemorySize 0 is too small, using default: 512
+2021/01/04 18:19:44 packer-builder-qemu plugin: CpuCount 0 too small, using default: 1
+2021/01/04 18:19:44 ui: Warning: Warning when preparing build: "debian10.7"
+
+ssh_host_port_min is deprecated and is being replaced by host_port_min. Please,
+update your template to use host_port_min. In future versions of Packer,
+inclusion of ssh_host_port_min will error your builds.
+
+Warning: Warning when preparing build: "debian10.7"
+
+ssh_host_port_max is deprecated and is being replaced by host_port_max. Please,
+update your template to use host_port_max. In future versions of Packer,
+inclusion of ssh_host_port_max will error your builds.
+
+2021/01/04 18:19:44 ui: [1;32mdebian10.7: output will be in this color.[0m
+2021/01/04 18:19:44 ui: 
+2021/01/04 18:19:44 Build debug mode: false
+2021/01/04 18:19:44 Force build: false
+2021/01/04 18:19:44 On error: 
+2021/01/04 18:19:44 Waiting on builds to complete...
+2021/01/04 18:19:44 Starting build run: debian10.7
+2021/01/04 18:19:44 Running builder: qemu
+2021/01/04 18:19:44 [INFO] (telemetry) Starting builder qemu
+2021/01/04 18:19:44 packer-builder-qemu plugin: Qemu path: /usr/bin/qemu-system-x86_64, Qemu Image page: /usr/bin/qemu-img
+2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Retrieving ISO[0m
+2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso[0m
+2021/01/04 18:19:44 packer-builder-qemu plugin: Acquiring lock for: https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270 (/home/sandy/Downloads/git/kvm-example/packer_cache/0718aa80e1a7a1a5274e081d571746c4049dcda0.iso.lock)
+2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270[0m
+2021/01/04 18:19:52 packer-builder-qemu plugin: Received interrupt signal (count: 1). Ignoring.
+2021/01/04 18:19:52 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
+2021/01/04 18:19:52 packer-provisioner-ansible-local plugin: Received interrupt signal (count: 1). Ignoring.
+2021/01/04 18:19:52 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
+2021/01/04 18:19:52 packer-post-processor-vagrant plugin: Received interrupt signal (count: 1). Ignoring.
+2021/01/04 18:19:52 ui error: Cancelling build after receiving interrupt
+2021/01/04 18:19:52 Cancelling builder after context cancellation context canceled
+2021/01/04 18:19:52 packer-builder-qemu plugin: closing
+2021/01/04 18:19:52 ui: [1;32m==> debian10.7: Download failed context canceled[0m
+2021/01/04 18:19:52 ui error: [1;31m==> debian10.7: error downloading ISO: [context canceled][0m
+2021/01/04 18:19:52 packer-builder-qemu plugin: Leaving retrieve loop for ISO
+2021/01/04 18:19:52 [INFO] (telemetry) ending qemu
+2021/01/04 18:19:52 ui error: [1;31mBuild 'debian10.7' errored after 7 seconds 608 milliseconds: error downloading ISO: [context canceled][0m
+2021/01/04 18:19:52 ui: 
+==> Wait completed after 7 seconds 608 milliseconds
+2021/01/04 18:19:52 ui: Cleanly cancelled builds after being interrupted.
+2021/01/04 18:19:52 [INFO] (telemetry) Finalizing.
+2021/01/04 18:19:53 waiting for all plugin processes to complete...
+2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
+2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
+2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
+2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
+2021/01/04 18:19:53 /usr/bin/packer: plugin process exited

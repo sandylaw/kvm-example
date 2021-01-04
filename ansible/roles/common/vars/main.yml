@@ -1,0 +1,52 @@
+---
+
+common_packages:
+  - htop
+  - bash-completion
+  - efibootmgr
+  - network-manager
+  - pavucontrol
+  - plymouth
+  - lightdm
+  - lightdm-gtk-greeter
+  - lxterminal
+  - xfce4
+  - alsa-utils
+  - git
+  - dialog
+  - cmake
+  - cryptsetup
+  - gnupg
+  - xz-utils
+  - intel-microcode
+  - rsync
+  - wget
+  - curl
+  - mousepad
+  - keepassxc
+  - unrar
+  - unzip
+  - tcpdump
+centos8:
+ubuntu2004:
+  fullupgrade: False
+debian10:
+  - aptitude
+  - python3-pip
+  - build-essential
+  - firefox-esr
+  - fonts-noto-cjk
+  - fonts-noto-core
+  - fcitx
+  - fcitx-config-gtk
+  - fcitx-frontend-gtk2
+  - fcitx-frontend-gtk3
+  - fcitx-frontend-qt5
+  - fcitx-module-x11
+  - fcitx-table
+  - fcitx-table-wbpy
+  - fcitx-ui-light
+  - firmware-linux
+  - firmware-linux-free
+  - firmware-linux-nonfree
+  - firmware-iwlwifi

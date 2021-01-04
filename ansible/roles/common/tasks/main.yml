@@ -1,0 +1,195 @@
+---
+- name: Centos Tweaking
+  block:
+    - name: Install NetworkManager-tui
+      package:
+        name: NetworkManager-tui
+        state: present
+    - name: enable NetworkManager service
+      systemd:
+        name: NetworkManager
+        enabled: yes
+
+    - name: Blacklist modules
+      copy:
+        src: blacklist.conf.centos
+        dest: /etc/modprobe.d/blacklist.conf
+        mode: '0644'
+        owner: root
+        group: root
+        backup: no
+
+    - name: disable, mask and stop kdump service
+      systemd:
+        name: kdump
+        enabled: no
+        masked: no
+        state: stopped
+      when: ansible_distribution == 'CentOS'
+
+    - name: Configure GRUB to enable serial console
+      copy:
+        src: grub.centos
+        dest: /etc/default/grub
+        mode: '0644'
+        owner: root
+        group: root
+        backup: no
+
+    - name: Regenerate GRUB configuration
+      command: "/usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg"
+
+    - name: Enable EPEL Repository on CentOS 8
+      dnf:
+        name: epel-release
+        state: present
+      when: ansible_facts['distribution_major_version'] == '8'
+    - name: Enable EPEL Repository on CentOS 7
+      yum:
+        name: epel-release
+        state: present
+      when: ansible_facts['distribution_major_version'] == '7'
+
+    - name: Install Cloud-init
+      yum:
+        name: cloud-init
+        state: present
+
+    - name: upgrade all packages
+      yum:
+        name: '*'
+        state: latest # noqa 403
+
+    - name: yum clean all
+      command: yum clean all # noqa 303
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Fedora'
+
+- name: Ubuntu latest packages update/upgrade and clean
+  block:
+    - name: Update all packages to the latest version
+      apt:
+        upgrade: dist
+    - name: Run the equivalent of "apt-get update" as a separate step
+      apt:
+        update_cache: yes
+    - name: Remove useless packages from the cache
+      apt:
+        autoclean: yes
+    - name: Remove dependencies that are no longer required
+      apt:
+        autoremove: yes
+  when: ansible_distribution == 'Ubuntu' and ubuntu1804.fullupgrade|default(False)
+
+- name: Configure GRUB to enable serial console on Debian/Ubuntu
+  copy:
+    src: grub.ubuntu
+    dest: /etc/default/grub
+    mode: '0644'
+    owner: root
+    group: root
+    backup: no
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+- name: Regenerate GRUB configuration
+  command: "/usr/sbin/grub-mkconfig -o /boot/grub/grub.cfg"
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+- name: Tweak Ubuntu netplan config
+  copy:
+    src: 01-netcfg.yaml.ubuntu
+    dest: /etc/netplan/01-netcfg.yaml
+    mode: '0644'
+    owner: root
+    group: root
+    backup: no
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Tweak Debian network config
+  copy:
+    src: interfaces.debian
+    dest: /etc/network/interfaces
+    mode: '0644'
+    owner: root
+    group: root
+    backup: no
+  when: ansible_distribution == 'Debian'
+
+- name: Add local pub key to authorized_keys
+  authorized_key:
+    user: root
+    key: "{{ lookup('file', 'id_rsa.pub') }}"
+#    key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
+    state: present
+
+- name: Tweak sshd_config
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: ".*UseDNS.*"
+    line: "UseDNS no"
+
+- name: Install common packages
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ common_packages }}"
+
+- name: Install Debian10 packages
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ debian10 }}"
+
+- name: Mask system services
+  systemd:
+    name: "{{ item }}"
+    masked: yes
+  loop:
+    - "sleep.target"
+    - "suspend.target"
+    - "hibernate.target"
+    - "hybrid-sleep.target"
+
+- name: Change systemd logind conf (1/2)
+  lineinfile:
+    path: "/etc/systemd/logind.conf"
+    regexp: '^#HandleLidSwitch=.*$'
+    line: "HandleLidSwitch=ignore"
+    mode: 0644
+
+- name: Change systemd logind conf (2/2)
+  lineinfile:
+    path: "/etc/systemd/logind.conf"
+    regexp: '^#HandleLidSwitchDocked=.*$'
+    line: "HandleLidSwitchDocked=ignore"
+    mode: 0644
+
+- name: Change systemd sleep conf (1/2)
+  lineinfile:
+    path: "/etc/systemd/sleep.conf"
+    regexp: '^#AllowSuspend=.*$'
+    line: "AllowSuspend=no"
+    mode: 0644
+
+- name: Change systemd sleep conf (2/2)
+  lineinfile:
+    path: "/etc/systemd/sleep.conf"
+    regexp: '^#AllowHibernation=.*$'
+    line: "AllowHibernation=no"
+    mode: 0644
+
+- name: Set lxterminal autostart
+  copy:
+    src: "/usr/share/applications/lxterminal.desktop"
+    dest: "/etc/xdg/autostart/lxterminal.desktop"
+    mode: 0644
+    remote_src: yes
+  tags:
+    - autostart
+
+- name: Add python symlink
+  file:
+    src: "/usr/bin/python3"
+    dest: "/usr/bin/python"
+    state: link
+    mode: 0777
+
