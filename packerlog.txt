@@ -1,114 +1,114 @@
-2021/01/04 18:19:44 [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: 
-2021/01/04 18:19:44 Deleting kv.Value: debian-preseed.cfg
-2021/01/04 18:19:44 Deleting kv.Value: 2
-2021/01/04 18:19:44 Deleting kv.Value: 40000
-2021/01/04 18:19:44 Deleting kv.Value: true
-2021/01/04 18:19:44 Deleting kv.Value: md5:7227c779619e6c8a0a1b0f55d10c6270
-2021/01/04 18:19:44 Deleting kv.Value: sha256
-2021/01/04 18:19:44 Deleting kv.Value: 10
-2021/01/04 18:19:44 Deleting kv.Value: 7
-2021/01/04 18:19:44 Deleting kv.Value: https://mirrors.ustc.edu.cn/debian-cd
-2021/01/04 18:19:44 Deleting kv.Value: debian
-2021/01/04 18:19:44 Deleting kv.Value: 2048
-2021/01/04 18:19:44 Deleting kv.Value: vagrant
-2021/01/04 18:19:44 Deleting kv.Value: root
-2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
-2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-qemu"}
-2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
-2021/01/04 18:19:44 packer-builder-qemu plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 packer-builder-qemu plugin: Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 packer-builder-qemu plugin: 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 packer-builder-qemu plugin: Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-builder-qemu plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-builder-qemu plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 packer-builder-qemu plugin: args: []string{"packer-builder-qemu"}
-2021/01/04 18:19:44 packer-builder-qemu plugin: Plugin address: unix /tmp/packer-plugin605400460
-2021/01/04 18:19:44 packer-builder-qemu plugin: Waiting for connection...
-2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin605400460
-2021/01/04 18:19:44 packer-builder-qemu plugin: Serving a plugin connection...
-2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
-2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
-2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
-2021/01/04 18:19:44 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin261968729
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Waiting for connection...
-2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin261968729
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Serving a plugin connection...
-2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
-2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-ansible-local"}
-2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: args: []string{"packer-provisioner-ansible-local"}
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Plugin address: unix /tmp/packer-plugin638045893
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Waiting for connection...
-2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin638045893
-2021/01/04 18:19:44 packer-provisioner-ansible-local plugin: Serving a plugin connection...
-2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
-2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
-2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
-2021/01/04 18:19:44 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin413399077
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Waiting for connection...
-2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin413399077
-2021/01/04 18:19:44 packer-provisioner-shell plugin: Serving a plugin connection...
-2021/01/04 18:19:44 Creating plugin client for path: /usr/bin/packer
-2021/01/04 18:19:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-post-processor-vagrant"}
-2021/01/04 18:19:44 Waiting for RPC address for: /usr/bin/packer
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Checking 'PACKER_CONFIG' for a config file path
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: 'PACKER_CONFIG' not set; checking the default config file path
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Attempting to open config file: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: args: []string{"packer-post-processor-vagrant"}
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Plugin address: unix /tmp/packer-plugin789006951
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Waiting for connection...
-2021/01/04 18:19:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin789006951
-2021/01/04 18:19:44 packer-post-processor-vagrant plugin: Serving a plugin connection...
-2021/01/04 18:19:44 Preparing build: debian10.7
-2021/01/04 18:19:44 packer-builder-qemu plugin: use specified accelerator: kvm
-2021/01/04 18:19:44 packer-builder-qemu plugin: MemorySize 0 is too small, using default: 512
-2021/01/04 18:19:44 packer-builder-qemu plugin: CpuCount 0 too small, using default: 1
-2021/01/04 18:19:44 ui: Warning: Warning when preparing build: "debian10.7"
+2021/01/05 17:31:11 [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:11 Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:11 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:11 Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:11 [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:11 Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: 
+2021/01/05 17:31:11 Deleting kv.Value: debian-preseed.cfg
+2021/01/05 17:31:11 Deleting kv.Value: 2
+2021/01/05 17:31:11 Deleting kv.Value: 65536M
+2021/01/05 17:31:11 Deleting kv.Value: true
+2021/01/05 17:31:11 Deleting kv.Value: md5:7227c779619e6c8a0a1b0f55d10c6270
+2021/01/05 17:31:11 Deleting kv.Value: sha256
+2021/01/05 17:31:11 Deleting kv.Value: 10
+2021/01/05 17:31:11 Deleting kv.Value: 7
+2021/01/05 17:31:11 Deleting kv.Value: https://mirrors.ustc.edu.cn/debian-cd
+2021/01/05 17:31:11 Deleting kv.Value: debian
+2021/01/05 17:31:11 Deleting kv.Value: 2048
+2021/01/05 17:31:11 Deleting kv.Value: vagrant
+2021/01/05 17:31:11 Deleting kv.Value: root
+2021/01/05 17:31:12 Creating plugin client for path: /usr/bin/packer
+2021/01/05 17:31:12 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-qemu"}
+2021/01/05 17:31:12 Waiting for RPC address for: /usr/bin/packer
+2021/01/05 17:31:12 packer-builder-qemu plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:12 packer-builder-qemu plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:12 packer-builder-qemu plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:12 packer-builder-qemu plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-builder-qemu plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-builder-qemu plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:12 packer-builder-qemu plugin: args: []string{"packer-builder-qemu"}
+2021/01/05 17:31:12 packer-builder-qemu plugin: Plugin address: unix /tmp/packer-plugin453219178
+2021/01/05 17:31:12 packer-builder-qemu plugin: Waiting for connection...
+2021/01/05 17:31:12 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin453219178
+2021/01/05 17:31:12 packer-builder-qemu plugin: Serving a plugin connection...
+2021/01/05 17:31:12 Creating plugin client for path: /usr/bin/packer
+2021/01/05 17:31:12 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2021/01/05 17:31:12 Waiting for RPC address for: /usr/bin/packer
+2021/01/05 17:31:12 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:12 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:12 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2021/01/05 17:31:12 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin391072994
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin391072994
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Waiting for connection...
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Serving a plugin connection...
+2021/01/05 17:31:12 Creating plugin client for path: /usr/bin/packer
+2021/01/05 17:31:12 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-ansible-local"}
+2021/01/05 17:31:12 Waiting for RPC address for: /usr/bin/packer
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: args: []string{"packer-provisioner-ansible-local"}
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Plugin address: unix /tmp/packer-plugin875215905
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Waiting for connection...
+2021/01/05 17:31:12 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin875215905
+2021/01/05 17:31:12 packer-provisioner-ansible-local plugin: Serving a plugin connection...
+2021/01/05 17:31:12 Creating plugin client for path: /usr/bin/packer
+2021/01/05 17:31:12 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2021/01/05 17:31:12 Waiting for RPC address for: /usr/bin/packer
+2021/01/05 17:31:12 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:12 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:12 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2021/01/05 17:31:12 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin167953587
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin167953587
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Waiting for connection...
+2021/01/05 17:31:12 packer-provisioner-shell plugin: Serving a plugin connection...
+2021/01/05 17:31:12 Creating plugin client for path: /usr/bin/packer
+2021/01/05 17:31:12 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-post-processor-vagrant"}
+2021/01/05 17:31:12 Waiting for RPC address for: /usr/bin/packer
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: [INFO] Packer version: 1.6.6 [go1.15.6 linux amd64]
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Attempting to open config file: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: [WARN] Config file doesn't exist: /home/sandy/.packerconfig
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Setting cache directory: /home/sandy/Downloads/git/kvm-example/packer_cache
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: args: []string{"packer-post-processor-vagrant"}
+2021/01/05 17:31:12 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin790427532
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Plugin address: unix /tmp/packer-plugin790427532
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Waiting for connection...
+2021/01/05 17:31:12 packer-post-processor-vagrant plugin: Serving a plugin connection...
+2021/01/05 17:31:12 Preparing build: debian10.7
+2021/01/05 17:31:12 packer-builder-qemu plugin: use specified accelerator: kvm
+2021/01/05 17:31:12 packer-builder-qemu plugin: MemorySize 0 is too small, using default: 512
+2021/01/05 17:31:12 packer-builder-qemu plugin: CpuCount 0 too small, using default: 1
+2021/01/05 17:31:12 ui: Warning: Warning when preparing build: "debian10.7"
 
 ssh_host_port_min is deprecated and is being replaced by host_port_min. Please,
 update your template to use host_port_min. In future versions of Packer,
@@ -120,40 +120,1059 @@ ssh_host_port_max is deprecated and is being replaced by host_port_max. Please,
 update your template to use host_port_max. In future versions of Packer,
 inclusion of ssh_host_port_max will error your builds.
 
-2021/01/04 18:19:44 ui: [1;32mdebian10.7: output will be in this color.[0m
-2021/01/04 18:19:44 ui: 
-2021/01/04 18:19:44 Build debug mode: false
-2021/01/04 18:19:44 Force build: false
-2021/01/04 18:19:44 On error: 
-2021/01/04 18:19:44 Waiting on builds to complete...
-2021/01/04 18:19:44 Starting build run: debian10.7
-2021/01/04 18:19:44 Running builder: qemu
-2021/01/04 18:19:44 [INFO] (telemetry) Starting builder qemu
-2021/01/04 18:19:44 packer-builder-qemu plugin: Qemu path: /usr/bin/qemu-system-x86_64, Qemu Image page: /usr/bin/qemu-img
-2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Retrieving ISO[0m
-2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso[0m
-2021/01/04 18:19:44 packer-builder-qemu plugin: Acquiring lock for: https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270 (/home/sandy/Downloads/git/kvm-example/packer_cache/0718aa80e1a7a1a5274e081d571746c4049dcda0.iso.lock)
-2021/01/04 18:19:44 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270[0m
-2021/01/04 18:19:52 packer-builder-qemu plugin: Received interrupt signal (count: 1). Ignoring.
-2021/01/04 18:19:52 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
-2021/01/04 18:19:52 packer-provisioner-ansible-local plugin: Received interrupt signal (count: 1). Ignoring.
-2021/01/04 18:19:52 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
-2021/01/04 18:19:52 packer-post-processor-vagrant plugin: Received interrupt signal (count: 1). Ignoring.
-2021/01/04 18:19:52 ui error: Cancelling build after receiving interrupt
-2021/01/04 18:19:52 Cancelling builder after context cancellation context canceled
-2021/01/04 18:19:52 packer-builder-qemu plugin: closing
-2021/01/04 18:19:52 ui: [1;32m==> debian10.7: Download failed context canceled[0m
-2021/01/04 18:19:52 ui error: [1;31m==> debian10.7: error downloading ISO: [context canceled][0m
-2021/01/04 18:19:52 packer-builder-qemu plugin: Leaving retrieve loop for ISO
-2021/01/04 18:19:52 [INFO] (telemetry) ending qemu
-2021/01/04 18:19:52 ui error: [1;31mBuild 'debian10.7' errored after 7 seconds 608 milliseconds: error downloading ISO: [context canceled][0m
-2021/01/04 18:19:52 ui: 
-==> Wait completed after 7 seconds 608 milliseconds
-2021/01/04 18:19:52 ui: Cleanly cancelled builds after being interrupted.
-2021/01/04 18:19:52 [INFO] (telemetry) Finalizing.
-2021/01/04 18:19:53 waiting for all plugin processes to complete...
-2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
-2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
-2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
-2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
-2021/01/04 18:19:53 /usr/bin/packer: plugin process exited
+2021/01/05 17:31:12 ui: [1;32mdebian10.7: output will be in this color.[0m
+2021/01/05 17:31:12 ui: 
+2021/01/05 17:31:12 Build debug mode: false
+2021/01/05 17:31:12 Force build: false
+2021/01/05 17:31:12 On error: 
+2021/01/05 17:31:12 Waiting on builds to complete...
+2021/01/05 17:31:12 Starting build run: debian10.7
+2021/01/05 17:31:12 Running builder: qemu
+2021/01/05 17:31:12 [INFO] (telemetry) Starting builder qemu
+2021/01/05 17:31:12 packer-builder-qemu plugin: Qemu path: /usr/bin/qemu-system-x86_64, Qemu Image page: /usr/bin/qemu-img
+2021/01/05 17:31:12 ui: [1;32m==> debian10.7: Retrieving ISO[0m
+2021/01/05 17:31:12 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso[0m
+2021/01/05 17:31:12 packer-builder-qemu plugin: Acquiring lock for: https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270 (/home/sandy/Downloads/git/kvm-example/packer_cache/0718aa80e1a7a1a5274e081d571746c4049dcda0.iso.lock)
+2021/01/05 17:31:12 ui: [1;32m==> debian10.7: Trying https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: closing
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso?checksum=md5%3A7227c779619e6c8a0a1b0f55d10c6270 => /home/sandy/Downloads/git/kvm-example/packer_cache/0718aa80e1a7a1a5274e081d571746c4049dcda0.iso[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: Leaving retrieve loop for ISO
+2021/01/05 17:31:52 packer-builder-qemu plugin: No floppy files specified. Floppy disk will not be made.
+2021/01/05 17:31:52 packer-builder-qemu plugin: No CD files specified. CD disk will not be made.
+2021/01/05 17:31:52 packer-builder-qemu plugin: [INFO] Creating disk with Path: builds/debian10.7/packer-debian10.7 and Size: 65536M
+2021/01/05 17:31:52 packer-builder-qemu plugin: Executing qemu-img: []string{"create", "-f", "qcow2", "builds/debian10.7/packer-debian10.7", "65536M"}
+2021/01/05 17:31:52 packer-builder-qemu plugin: stdout: Formatting 'builds/debian10.7/packer-debian10.7', fmt=qcow2 size=68719476736 cluster_size=65536 lazy_refcounts=off refcount_bits=16
+2021/01/05 17:31:52 packer-builder-qemu plugin: stderr:
+2021/01/05 17:31:52 packer-builder-qemu plugin: Found available port: 10084 on IP: 0.0.0.0
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: Starting HTTP server on port 10084[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: Looking for available communicator (SSH, WinRM, etc) port between 2222 and 2229
+2021/01/05 17:31:52 packer-builder-qemu plugin: Found available port: 2225 on IP: 127.0.0.1
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: Found port for communicator (SSH, WinRM, etc): 2225.[0m
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: Looking for available port between 5900 and 6000 on 127.0.0.1[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: Looking for available port between 5900 and 6000 on 127.0.0.1
+2021/01/05 17:31:52 packer-builder-qemu plugin: Found available port: 5944 on IP: 127.0.0.1
+2021/01/05 17:31:52 packer-builder-qemu plugin: Found available VNC port: 5944 on IP: 127.0.0.1
+2021/01/05 17:31:52 packer-builder-qemu plugin: Qemu --version output: QEMU emulator version 3.1.0 (Debian 1:3.1+dfsg-8+deb10u5)
+2021/01/05 17:31:52 packer-builder-qemu plugin: Copyright (c) 2003-2018 Fabrice Bellard and the QEMU Project developers
+2021/01/05 17:31:52 packer-builder-qemu plugin: Qemu version: 3.1.0
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: Starting VM, booting from CD-ROM[0m
+2021/01/05 17:31:52 ui: [0;32m    debian10.7: The VM will be run headless, without a GUI. If you want to
+    debian10.7: view the screen of the VM, connect via VNC without a password to
+    debian10.7: vnc://127.0.0.1:44[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: Qemu Builder has no floppy files, not attaching a floppy.
+2021/01/05 17:31:52 ui: [1;32m==> debian10.7: Overriding default Qemu arguments with qemuargs template option...[0m
+2021/01/05 17:31:52 packer-builder-qemu plugin: Executing /usr/bin/qemu-system-x86_64: []string{"-smp", "2", "-device", "virtio-net,netdev=user.0", "-machine", "type=pc,accel=kvm", "-m", "2048M", "-drive", "file=builds/debian10.7/packer-debian10.7,if=virtio,cache=none,discard=unmap,format=qcow2", "-drive", "file=/home/sandy/Downloads/git/kvm-example/packer_cache/0718aa80e1a7a1a5274e081d571746c4049dcda0.iso,index=0,media=cdrom", "-boot", "once=d", "-name", "packer-debian10.7", "-netdev", "user,id=user.0,hostfwd=tcp::2225-:22", "-vnc", "127.0.0.1:44"}
+2021/01/05 17:31:52 packer-builder-qemu plugin: Started Qemu. Pid: 31599
+2021/01/05 17:31:54 ui: [1;32m==> debian10.7: Waiting 10s for boot...[0m
+2021/01/05 17:32:04 ui: [1;32m==> debian10.7: Connecting to VM via VNC (127.0.0.1:5944)[0m
+2021/01/05 17:32:04 packer-builder-qemu plugin: Connected to VNC desktop: QEMU (packer-debian10.7)
+2021/01/05 17:32:04 ui: [1;32m==> debian10.7: Typing the boot command over VNC...[0m
+2021/01/05 17:32:04 packer-builder-qemu plugin: Special code '<esc>' found, replacing with: 0xFF1B
+2021/01/05 17:32:04 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:05 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:05 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:06 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:06 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:06 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:06 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:07 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:07 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:08 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:08 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:08 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:08 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:08 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:09 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:09 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:09 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:09 packer-builder-qemu plugin: Sending char 'y', code 0x79, shift false
+2021/01/05 17:32:09 packer-builder-qemu plugin: Sending char 'm', code 0x6D, shift false
+2021/01/05 17:32:10 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:10 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:32:10 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:10 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:10 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:11 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:11 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:32:11 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:11 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:11 packer-builder-qemu plugin: Sending char 'y', code 0x79, shift false
+2021/01/05 17:32:12 packer-builder-qemu plugin: Sending char 'm', code 0x6D, shift false
+2021/01/05 17:32:12 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:12 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:32:12 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:12 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:13 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:13 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:13 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:14 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:14 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:14 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:15 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:15 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:15 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:15 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:15 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:16 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:16 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:16 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:16 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:16 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:32:17 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:32:17 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:17 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:17 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:17 packer-builder-qemu plugin: Sending char '_', code 0x5F, shift true
+2021/01/05 17:32:18 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:18 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:18 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:18 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:19 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:19 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:19 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:19 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:19 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:20 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:20 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:20 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:20 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:20 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:21 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:22 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:22 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:22 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:22 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:22 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:23 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:23 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:32:23 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:23 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:23 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:24 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:24 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:24 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:24 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:24 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:25 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:25 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:25 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:25 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:25 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:26 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:26 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:26 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:26 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:26 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:27 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:27 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:27 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:27 packer-builder-qemu plugin: Sending char 'v', code 0x76, shift false
+2021/01/05 17:32:27 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:28 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:28 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:29 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:29 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:29 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:29 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:30 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:30 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:30 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:30 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:30 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:31 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:31 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:31 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:31 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:31 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:32 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:32 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:32 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:32 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:32 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:33 packer-builder-qemu plugin: Sending char '_', code 0x5F, shift true
+2021/01/05 17:32:33 packer-builder-qemu plugin: Sending char 'U', code 0x55, shift true
+2021/01/05 17:32:33 packer-builder-qemu plugin: Sending char 'S', code 0x53, shift true
+2021/01/05 17:32:34 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:34 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:35 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:35 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:35 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:36 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:36 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:36 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:36 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:37 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:37 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:37 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:38 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:38 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:38 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:39 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:39 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:39 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:39 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:39 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:40 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:41 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:41 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:41 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:41 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:41 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:42 packer-builder-qemu plugin: Sending char 'h', code 0x68, shift false
+2021/01/05 17:32:42 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:42 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:42 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:42 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:43 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:43 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:32:43 packer-builder-qemu plugin: Sending char 'm', code 0x6D, shift false
+2021/01/05 17:32:43 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:43 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:44 packer-builder-qemu plugin: Sending char 'h', code 0x68, shift false
+2021/01/05 17:32:44 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:44 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:44 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:44 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:45 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:45 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:45 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:46 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:46 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:46 packer-builder-qemu plugin: Sending char 'y', code 0x79, shift false
+2021/01/05 17:32:47 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:47 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:47 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:47 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:47 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:32:48 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:48 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:48 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:48 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:48 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:32:49 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:49 packer-builder-qemu plugin: Sending char 'g', code 0x67, shift false
+2021/01/05 17:32:49 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:49 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:32:49 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:50 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:50 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:32:50 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:50 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:50 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:32:51 packer-builder-qemu plugin: Sending char 'x', code 0x78, shift false
+2021/01/05 17:32:51 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:51 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:32:51 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:32:51 packer-builder-qemu plugin: Sending char 'k', code 0x6B, shift false
+2021/01/05 17:32:52 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:52 packer-builder-qemu plugin: Sending char 'y', code 0x79, shift false
+2021/01/05 17:32:52 packer-builder-qemu plugin: Sending char 'm', code 0x6D, shift false
+2021/01/05 17:32:52 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:52 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:32:53 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:53 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:32:53 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:32:53 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:53 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:54 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:55 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:32:55 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:55 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:32:55 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:32:55 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:56 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:32:56 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:56 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:56 packer-builder-qemu plugin: Sending char '_', code 0x5F, shift true
+2021/01/05 17:32:57 packer-builder-qemu plugin: Sending char 'U', code 0x55, shift true
+2021/01/05 17:32:57 packer-builder-qemu plugin: Sending char 'S', code 0x53, shift true
+2021/01/05 17:32:57 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:32:58 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:32:59 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:32:59 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:32:59 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:32:59 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:32:59 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:33:00 packer-builder-qemu plugin: Sending char 'g', code 0x67, shift false
+2021/01/05 17:33:00 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:00 packer-builder-qemu plugin: Sending char 'g', code 0x67, shift false
+2021/01/05 17:33:00 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:00 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:01 packer-builder-qemu plugin: Sending char '_', code 0x5F, shift true
+2021/01/05 17:33:01 packer-builder-qemu plugin: Sending char 'h', code 0x68, shift false
+2021/01/05 17:33:01 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/01/05 17:33:01 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:33:02 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:02 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:33:02 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:33:02 packer-builder-qemu plugin: Sending char 'm', code 0x6D, shift false
+2021/01/05 17:33:02 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:03 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:33:03 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:33:03 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:03 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:33:03 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:33:04 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:33:04 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:33:04 packer-builder-qemu plugin: Sending char '1', code 0x31, shift false
+2021/01/05 17:33:04 packer-builder-qemu plugin: Sending char '0', code 0x30, shift false
+2021/01/05 17:33:04 packer-builder-qemu plugin: Sending char '.', code 0x2E, shift false
+2021/01/05 17:33:05 packer-builder-qemu plugin: Sending char '7', code 0x37, shift false
+2021/01/05 17:33:05 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:33:05 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:33:06 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:33:06 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:33:06 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:07 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:33:07 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:07 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:07 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:33:07 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:08 packer-builder-qemu plugin: Sending char 'u', code 0x75, shift false
+2021/01/05 17:33:08 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:33:08 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/01/05 17:33:08 packer-builder-qemu plugin: Sending char '=', code 0x3D, shift false
+2021/01/05 17:33:08 packer-builder-qemu plugin: Sending char 'h', code 0x68, shift false
+2021/01/05 17:33:09 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:09 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:09 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:33:09 packer-builder-qemu plugin: Sending char ':', code 0x3A, shift true
+2021/01/05 17:33:10 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:10 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:10 packer-builder-qemu plugin: Sending char '1', code 0x31, shift false
+2021/01/05 17:33:10 packer-builder-qemu plugin: Sending char '0', code 0x30, shift false
+2021/01/05 17:33:10 packer-builder-qemu plugin: Sending char '.', code 0x2E, shift false
+2021/01/05 17:33:11 packer-builder-qemu plugin: Sending char '0', code 0x30, shift false
+2021/01/05 17:33:11 packer-builder-qemu plugin: Sending char '.', code 0x2E, shift false
+2021/01/05 17:33:11 packer-builder-qemu plugin: Sending char '2', code 0x32, shift false
+2021/01/05 17:33:11 packer-builder-qemu plugin: Sending char '.', code 0x2E, shift false
+2021/01/05 17:33:11 packer-builder-qemu plugin: Sending char '2', code 0x32, shift false
+2021/01/05 17:33:12 packer-builder-qemu plugin: Sending char ':', code 0x3A, shift true
+2021/01/05 17:33:12 packer-builder-qemu plugin: Sending char '1', code 0x31, shift false
+2021/01/05 17:33:12 packer-builder-qemu plugin: Sending char '0', code 0x30, shift false
+2021/01/05 17:33:12 packer-builder-qemu plugin: Sending char '0', code 0x30, shift false
+2021/01/05 17:33:13 packer-builder-qemu plugin: Sending char '8', code 0x38, shift false
+2021/01/05 17:33:13 packer-builder-qemu plugin: Sending char '4', code 0x34, shift false
+2021/01/05 17:33:13 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:13 packer-builder-qemu plugin: Sending char 'h', code 0x68, shift false
+2021/01/05 17:33:13 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:14 packer-builder-qemu plugin: Sending char 't', code 0x74, shift false
+2021/01/05 17:33:14 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:33:14 packer-builder-qemu plugin: Sending char '/', code 0x2F, shift false
+2021/01/05 17:33:14 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:33:14 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:15 packer-builder-qemu plugin: Sending char 'b', code 0x62, shift false
+2021/01/05 17:33:15 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/01/05 17:33:15 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/01/05 17:33:15 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/01/05 17:33:15 packer-builder-qemu plugin: Sending char '-', code 0x2D, shift false
+2021/01/05 17:33:16 packer-builder-qemu plugin: Sending char 'p', code 0x70, shift false
+2021/01/05 17:33:16 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/01/05 17:33:16 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:16 packer-builder-qemu plugin: Sending char 's', code 0x73, shift false
+2021/01/05 17:33:16 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:17 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/01/05 17:33:17 packer-builder-qemu plugin: Sending char 'd', code 0x64, shift false
+2021/01/05 17:33:17 packer-builder-qemu plugin: Sending char '.', code 0x2E, shift false
+2021/01/05 17:33:17 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/01/05 17:33:17 packer-builder-qemu plugin: Sending char 'f', code 0x66, shift false
+2021/01/05 17:33:18 packer-builder-qemu plugin: Sending char 'g', code 0x67, shift false
+2021/01/05 17:33:18 packer-builder-qemu plugin: Sending char ' ', code 0x20, shift false
+2021/01/05 17:33:18 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:33:19 packer-builder-qemu plugin: Special code '<enter>' found, replacing with: 0xFF0D
+2021/01/05 17:33:19 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/01/05 17:33:20 ui: [0;32m    debian10.7: Not using a NetBridge -- skipping StepWaitGuestAddress[0m
+2021/01/05 17:33:20 ui: [1;32m==> debian10.7: Using ssh communicator to connect: 127.0.0.1[0m
+2021/01/05 17:33:20 packer-builder-qemu plugin: [INFO] Waiting for SSH, up to timeout: 30m0s
+2021/01/05 17:33:20 ui: [1;32m==> debian10.7: Waiting for SSH to become available...[0m
+2021/01/05 17:33:20 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:33:20 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:33:20 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:33:43 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34484->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:33:50 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:33:50 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:33:50 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:33:50 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:33:57 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:33:57 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:33:57 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:33:57 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:34:04 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:04 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:04 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:04 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34514->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:11 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:11 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:11 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:11 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:34:18 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:18 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:18 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:18 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34528->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:25 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:25 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:25 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:25 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34538->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:32 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:32 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:32 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:32 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34550->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:39 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:39 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:39 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:39 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34554->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:46 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:46 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:46 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:46 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34558->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:34:53 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:34:53 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:34:53 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:34:53 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34564->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:00 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:00 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:00 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:00 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34568->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:07 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:07 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:07 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:07 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34572->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:14 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:14 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:14 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:14 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34578->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:21 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:21 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:21 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:21 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:35:28 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:28 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:28 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:28 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34594->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:35 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:35 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:35 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:35 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34600->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:42 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:42 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:42 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:42 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34604->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:35:49 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:49 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:49 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:49 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:35:56 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:35:56 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:35:56 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:35:56 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34622->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:03 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:03 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:03 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:03 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34632->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:10 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:10 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:10 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:10 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34636->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:17 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:17 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:17 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:17 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34642->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:24 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:24 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:24 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:24 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:36:31 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:31 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:31 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:31 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34658->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:38 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:38 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:38 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:38 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34664->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:45 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:45 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:45 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:45 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34670->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:52 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:52 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:52 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:52 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34676->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:36:59 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:36:59 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:36:59 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:36:59 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34680->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:06 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:06 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:06 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:06 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:37:13 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:13 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:13 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:13 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34688->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:20 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:20 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:20 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:20 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34700->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:27 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:27 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:27 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:27 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34710->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:34 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:34 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:34 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:34 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34736->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:41 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:41 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:41 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:41 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34748->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:48 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:48 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:48 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:48 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34752->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:37:55 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:37:55 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:37:55 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:37:55 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34758->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:02 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:02 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:02 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:02 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34764->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:09 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:09 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:09 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:09 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34770->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:16 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:16 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:16 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:16 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34776->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:23 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:23 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:23 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:23 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:38:30 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:30 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:30 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:30 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34800->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:37 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:37 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:37 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:37 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34806->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:44 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:44 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:44 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:44 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34810->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:51 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:51 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:51 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:51 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34822->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:38:58 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:38:58 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:38:58 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:38:58 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34828->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:39:05 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:05 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:05 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:05 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34832->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:39:12 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:12 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:12 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:12 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34838->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:39:19 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:19 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:19 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:19 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34844->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:39:26 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:26 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:26 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:26 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:39:33 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:33 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:33 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:33 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:39:40 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:40 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:40 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:40 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34870->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:39:47 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:47 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:47 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:47 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:39:54 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:39:54 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:39:54 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:39:54 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:40:01 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:01 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:01 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:01 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:40:08 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:08 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:08 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:08 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34894->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:15 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:15 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:15 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:15 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34904->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:22 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:22 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:22 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:22 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34908->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:29 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:29 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:29 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:29 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34920->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:36 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:36 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:36 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:36 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34926->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:43 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:43 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:43 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:43 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34932->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:50 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:50 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:50 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:50 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34940->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:40:57 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:40:57 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:40:57 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:40:57 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34946->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:04 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:04 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:04 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:04 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34950->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:11 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:11 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:11 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:11 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34954->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:18 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:18 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:18 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:18 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34960->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:25 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:25 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:25 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:25 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:41:32 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:32 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:32 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:32 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34978->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:39 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:39 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:39 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:39 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34982->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:46 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:46 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:46 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:46 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:34990->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:41:53 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:41:53 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:41:53 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:41:53 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:42:00 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:00 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:00 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:00 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35000->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:07 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:07 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:07 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:07 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:42:14 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:14 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:14 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:14 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35010->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:21 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:21 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:21 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:21 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35014->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:28 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:28 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:28 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:28 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35026->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:35 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:35 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:35 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:35 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:42:42 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:42 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:42 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:42 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35036->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:49 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:49 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:49 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:49 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35042->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:42:56 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:42:56 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:42:56 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:42:56 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35054->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:03 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:03 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:03 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:03 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35060->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:10 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:10 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:10 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:10 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35068->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:17 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:17 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:17 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:17 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35076->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:24 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:24 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:24 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:24 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35082->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:31 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:31 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:31 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:31 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2021/01/05 17:43:38 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:38 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:38 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:38 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35104->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:45 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:45 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:45 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:43:45 packer-builder-qemu plugin: [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:35110->127.0.0.1:2225: read: connection reset by peer
+2021/01/05 17:43:52 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:2225...
+2021/01/05 17:43:52 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/01/05 17:43:52 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] handshake complete!
+2021/01/05 17:44:12 packer-builder-qemu plugin: [INFO] no local agent socket, will not connect agent
+2021/01/05 17:44:12 ui: [1;32m==> debian10.7: Connected to SSH![0m
+2021/01/05 17:44:12 packer-builder-qemu plugin: Running the provision hook
+2021/01/05 17:44:12 [INFO] (telemetry) Starting provisioner shell
+2021/01/05 17:44:12 ui: [1;32m==> debian10.7: Provisioning with shell script: /tmp/packer-shell459427545[0m
+2021/01/05 17:44:12 packer-provisioner-shell plugin: Opening /tmp/packer-shell459427545 for reading
+2021/01/05 17:44:12 packer-provisioner-shell plugin: [INFO] 34 bytes written for 'uploadData'
+2021/01/05 17:44:12 [INFO] 34 bytes written for 'uploadData'
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] scp: Uploading script_8383.sh: perms=C0644 size=34
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] scp stderr (length 30): Sink: C0644 34 script_8383.sh
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] starting remote command: chmod 0755 /tmp/script_8383.sh
+2021/01/05 17:44:12 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:44:12 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:44:12 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:44:12 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:44:12 packer-builder-qemu plugin: [DEBUG] starting remote command: PACKER_BUILDER_TYPE='qemu' PACKER_BUILD_NAME='debian10.7' PACKER_HTTP_ADDR='10.0.2.2:10084' PACKER_HTTP_IP='10.0.2.2' PACKER_HTTP_PORT='10084'  bash '/tmp/script_8383.sh'
+2021/01/05 17:44:14 ui: [0;32m    debian10.7: Collecting ansible[0m
+2021/01/05 17:44:15 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/01/ff/0bdc7b0698f7d4e02e7da6e96d7d856a42667419c5c48bbfc3f8dda9a80e/ansible-2.10.4.tar.gz (28.6MB)[0m
+2021/01/05 17:45:18 ui: [0;32m    debian10.7: Collecting ansible-base<2.11,>=2.10.3 (from ansible)[0m
+2021/01/05 17:45:19 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/2d/e0/3eabf1be1211f653c73bc7827084c301aaefc6d8fc73e33572172cf0306b/ansible-base-2.10.4.tar.gz (5.7MB)[0m
+2021/01/05 17:45:24 ui: [0;32m    debian10.7: Collecting PyYAML (from ansible-base<2.11,>=2.10.3->ansible)[0m
+2021/01/05 17:45:24 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz (269kB)[0m
+2021/01/05 17:45:24 ui: [0;32m    debian10.7: Requirement already satisfied: cryptography in /usr/lib/python3/dist-packages (from ansible-base<2.11,>=2.10.3->ansible) (2.6.1)[0m
+2021/01/05 17:45:24 ui: [0;32m    debian10.7: Collecting jinja2 (from ansible-base<2.11,>=2.10.3->ansible)[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl (125kB)[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7: Collecting packaging (from ansible-base<2.11,>=2.10.3->ansible)[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/b1/a7/588bfa063e7763247ab6f7e1d994e331b85e0e7d09f853c59a6eb9696974/packaging-20.8-py2.py3-none-any.whl[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7: Collecting MarkupSafe>=0.23 (from jinja2->ansible-base<2.11,>=2.10.3->ansible)[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/98/7b/ff284bd8c80654e471b769062a9b43cc5d03e7a615048d96f4619df8d420/MarkupSafe-1.1.1-cp37-cp37m-manylinux1_x86_64.whl[0m
+2021/01/05 17:45:25 ui: [0;32m    debian10.7: Collecting pyparsing>=2.0.2 (from packaging->ansible-base<2.11,>=2.10.3->ansible)[0m
+2021/01/05 17:45:26 ui: [0;32m    debian10.7:   Downloading https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl (67kB)[0m
+2021/01/05 17:45:26 ui: [0;32m    debian10.7: Building wheels for collected packages: ansible, ansible-base, PyYAML[0m
+2021/01/05 17:45:26 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for ansible: started[0m
+2021/01/05 17:45:50 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for ansible: finished with status 'done'[0m
+2021/01/05 17:45:50 ui: [0;32m    debian10.7:   Stored in directory: /root/.cache/pip/wheels/8f/b9/73/bb9c1ae94f30eb93d3ad47b7892dfeb040466cb9472b52d95a[0m
+2021/01/05 17:45:55 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for ansible-base: started[0m
+2021/01/05 17:45:56 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for ansible-base: finished with status 'done'[0m
+2021/01/05 17:45:56 ui: [0;32m    debian10.7:   Stored in directory: /root/.cache/pip/wheels/a3/1b/ec/35e31f36d0ce8d74ebc9b5250dad450b287cc3b763ac2afcfa[0m
+2021/01/05 17:45:56 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for PyYAML: started[0m
+2021/01/05 17:45:57 ui: [0;32m    debian10.7:   Running setup.py bdist_wheel for PyYAML: finished with status 'done'[0m
+2021/01/05 17:45:57 ui: [0;32m    debian10.7:   Stored in directory: /root/.cache/pip/wheels/a7/c1/ea/cf5bd31012e735dc1dfea3131a2d5eae7978b251083d6247bd[0m
+2021/01/05 17:45:57 ui: [0;32m    debian10.7: Successfully built ansible ansible-base PyYAML[0m
+2021/01/05 17:45:57 ui: [0;32m    debian10.7: Installing collected packages: PyYAML, MarkupSafe, jinja2, pyparsing, packaging, ansible-base, ansible[0m
+2021/01/05 17:46:12 ui: [0;32m    debian10.7: Successfully installed MarkupSafe-1.1.1 PyYAML-5.3.1 ansible-2.10.4 ansible-base-2.10.4 jinja2-2.11.2 packaging-20.8 pyparsing-2.4.7[0m
+2021/01/05 17:46:13 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:46:13 [INFO] 2716 bytes written for 'stdout'
+2021/01/05 17:46:13 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 packer-provisioner-shell plugin: [INFO] 2716 bytes written for 'stdout'
+2021/01/05 17:46:13 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:46:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f /tmp/script_8383.sh
+2021/01/05 17:46:13 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f
+2021/01/05 17:46:13 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] (telemetry) ending shell
+2021/01/05 17:46:13 [INFO] (telemetry) Starting provisioner ansible-local
+2021/01/05 17:46:13 ui: [1;32m==> debian10.7: Provisioning with Ansible...[0m
+2021/01/05 17:46:13 ui: [0;32m    debian10.7: Uploading Playbook directory to Ansible staging directory...[0m
+2021/01/05 17:46:13 ui: [0;32m    debian10.7: Creating directory: /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe[0m
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] starting remote command: mkdir -p '/tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe'
+2021/01/05 17:46:13 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] 0 bytes written for 'stdout'
+2021/01/05 17:46:13 [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:46:13 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:46:13 packer-provisioner-ansible-local plugin: [INFO] 0 bytes written for 'stdout'
+2021/01/05 17:46:13 packer-provisioner-ansible-local plugin: [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:46:13 packer-provisioner-ansible-local plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Upload dir 'ansible/' to '/tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe'
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -rvt /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading playbook.yml: perms=C0644 size=113
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP: starting directory upload: roles
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP: starting directory upload: common
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP: starting directory upload: vars
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading main.yml: perms=C0644 size=1216
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP: starting directory upload: files
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading grub.ubuntu: perms=C0644 size=308
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading blacklist.conf.centos: perms=C0644 size=17
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading grub.centos: perms=C0644 size=315
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading id_rsa.pub: perms=C0644 size=406
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading id_rsa: perms=C0644 size=2602
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading interfaces.debian: perms=C0644 size=335
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading 01-netcfg.yaml.ubuntu: perms=C0644 size=193
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP: starting directory upload: tasks
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading main.yml: perms=C0644 size=3353
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp stderr (length 437): Sink: C0644 113 playbook.yml
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: D0755 0 roles
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: D0755 0 common
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: D0755 0 vars
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 1216 main.yml
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: E
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: D0755 0 files
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 308 grub.ubuntu
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 17 blacklist.conf.centos
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 315 grub.centos
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 406 id_rsa.pub
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 2602 id_rsa
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 335 interfaces.debian
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 193 01-netcfg.yaml.ubuntu
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: E
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: D0755 0 tasks
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: C0644 3353 main.yml
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: E
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: E
+2021/01/05 17:46:13 packer-builder-qemu plugin: Sink: E
+2021/01/05 17:46:13 ui: [0;32m    debian10.7: Uploading main Playbook file...[0m
+2021/01/05 17:46:13 packer-provisioner-ansible-local plugin: [INFO] 113 bytes written for 'uploadData'
+2021/01/05 17:46:13 [INFO] 113 bytes written for 'uploadData'
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading playbook.yml: perms=C0644 size=113
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp stderr (length 29): Sink: C0644 113 playbook.yml
+2021/01/05 17:46:13 ui: [0;32m    debian10.7: Uploading inventory file...[0m
+2021/01/05 17:46:13 packer-provisioner-ansible-local plugin: [INFO] 9 bytes written for 'uploadData'
+2021/01/05 17:46:13 [INFO] 9 bytes written for 'uploadData'
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp: Uploading packer-provisioner-ansible-local221109516: perms=C0644 size=9
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] scp stderr (length 56): Sink: C0644 9 packer-provisioner-ansible-local221109516
+2021/01/05 17:46:13 ui: [0;32m    debian10.7: Executing Ansible: cd /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe && ANSIBLE_FORCE_COLOR=1 PYTHONUNBUFFERED=1 ansible-playbook /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe/playbook.yml --extra-vars "packer_build_name=debian10.7 packer_builder_type=qemu packer_http_addr=10.0.2.2:10084 -o IdentitiesOnly=yes"  -c local -i /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe/packer-provisioner-ansible-local221109516[0m
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:46:13 packer-builder-qemu plugin: [DEBUG] starting remote command: cd /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe && ANSIBLE_FORCE_COLOR=1 PYTHONUNBUFFERED=1 ansible-playbook /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe/playbook.yml --extra-vars "packer_build_name=debian10.7 packer_builder_type=qemu packer_http_addr=10.0.2.2:10084 -o IdentitiesOnly=yes"  -c local -i /tmp/packer-provisioner-ansible-local/5ff431e0-dd7f-9a9b-4162-ef6d376f2dbe/packer-provisioner-ansible-local221109516
+2021/01/05 17:46:16 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:16 ui: [0;32m    debian10.7: PLAY [Configure KVM base image] ************************************************[0m
+2021/01/05 17:46:16 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:16 ui: [0;32m    debian10.7: TASK [Gathering Facts] *********************************************************[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35m[DEPRECATION WARNING]: Distribution debian 10.7 on host 127.0.0.1 should use [0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35m/usr/bin/python3, but is using /usr/bin/python for backward compatibility with [0m[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7: [0;32mok: [127.0.0.1][0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35mprior Ansible releases. A future Ansible release will default to using the [0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35mdiscovered platform python for this host. See https://docs.ansible.com/ansible/[0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35m2.10/reference_appendices/interpreter_discovery.html for more information. This[0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35m feature will be removed in version 2.12. Deprecation warnings can be disabled [0m[0m
+2021/01/05 17:46:19 ui error: [1;31m==> debian10.7: [0;35mby setting deprecation_warnings=False in ansible.cfg.[0m[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7: TASK [common : Configure GRUB to enable serial console on Debian/Ubuntu] *******[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:19 ui: [0;32m    debian10.7: TASK [common : Regenerate GRUB configuration] **********************************[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: TASK [common : Tweak Ubuntu netplan config] ************************************[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: [0;36mskipping: [127.0.0.1][0m[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: TASK [common : Tweak Debian network config] ************************************[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:25 ui: [0;32m    debian10.7: TASK [common : Add local pub key to authorized_keys] ***************************[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: TASK [common : Tweak sshd_config] **********************************************[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: TASK [common : Add python symlink] *********************************************[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:26 ui: [0;32m    debian10.7: TASK [common : Upgrade base system] ********************************************[0m
+2021/01/05 17:46:30 ui: [0;32m    debian10.7: [0;32mok: [127.0.0.1][0m[0m
+2021/01/05 17:46:30 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:46:30 ui: [0;32m    debian10.7: TASK [common : Install backports linux-image-latest] ***************************[0m
+2021/01/05 17:47:01 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:47:01 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:47:01 ui: [0;32m    debian10.7: TASK [Install common packages] *************************************************[0m
+2021/01/05 17:51:07 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:51:07 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:51:07 ui: [0;32m    debian10.7: TASK [common : Install Debian10 packages] **************************************[0m
+2021/01/05 17:52:38 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:38 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:38 ui: [0;32m    debian10.7: TASK [common : Mask system services] *******************************************[0m
+2021/01/05 17:52:39 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1] => (item=sleep.target)[0m[0m
+2021/01/05 17:52:39 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1] => (item=suspend.target)[0m[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1] => (item=hibernate.target)[0m[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1] => (item=hybrid-sleep.target)[0m[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: TASK [common : Change systemd logind conf (1/2)] *******************************[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: TASK [common : Change systemd logind conf (2/2)] *******************************[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:40 ui: [0;32m    debian10.7: TASK [common : Change systemd sleep conf (1/2)] ********************************[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: TASK [common : Change systemd sleep conf (2/2)] ********************************[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: TASK [common : Set lxterminal autostart] ***************************************[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: [0;33mchanged: [127.0.0.1][0m[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: PLAY RECAP *********************************************************************[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7: [0;33m127.0.0.1[0m                  : [0;32mok=17  [0m [0;33mchanged=15  [0m unreachable=0    failed=0    [0;36mskipped=1   [0m rescued=0    ignored=0[0m
+2021/01/05 17:52:41 ui: [0;32m    debian10.7:[0m
+2021/01/05 17:52:41 [INFO] 2571 bytes written for 'stdout'
+2021/01/05 17:52:41 [INFO] 605 bytes written for 'stderr'
+2021/01/05 17:52:41 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:41 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:41 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:41 packer-provisioner-ansible-local plugin: [INFO] 2571 bytes written for 'stdout'
+2021/01/05 17:52:41 packer-provisioner-ansible-local plugin: [INFO] 605 bytes written for 'stderr'
+2021/01/05 17:52:41 packer-provisioner-ansible-local plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:41 [INFO] (telemetry) ending ansible-local
+2021/01/05 17:52:41 [INFO] (telemetry) Starting provisioner shell
+2021/01/05 17:52:41 ui: [1;32m==> debian10.7: Provisioning with shell script: /tmp/packer-shell076542070[0m
+2021/01/05 17:52:41 packer-provisioner-shell plugin: Opening /tmp/packer-shell076542070 for reading
+2021/01/05 17:52:41 packer-provisioner-shell plugin: [INFO] 57 bytes written for 'uploadData'
+2021/01/05 17:52:41 [INFO] 57 bytes written for 'uploadData'
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] scp: Uploading script_9802.sh: perms=C0644 size=57
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] scp stderr (length 30): Sink: C0644 57 script_9802.sh
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] starting remote command: chmod 0755 /tmp/script_9802.sh
+2021/01/05 17:52:41 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:41 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:41 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:41 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:41 packer-builder-qemu plugin: [DEBUG] starting remote command: PACKER_BUILDER_TYPE='qemu' PACKER_BUILD_NAME='debian10.7' PACKER_HTTP_ADDR='10.0.2.2:10084' PACKER_HTTP_IP='10.0.2.2' PACKER_HTTP_PORT='10084'  bash '/tmp/script_9802.sh'
+2021/01/05 17:52:42 ui: [0;32m    debian10.7: Reading package lists...[0m
+2021/01/05 17:52:42 ui: [0;32m    debian10.7: Building dependency tree...[0m
+2021/01/05 17:52:42 ui: [0;32m    debian10.7: Reading state information...[0m
+2021/01/05 17:52:42 ui: [0;32m    debian10.7: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.[0m
+2021/01/05 17:52:42 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] 145 bytes written for 'stdout'
+2021/01/05 17:52:42 [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:52:42 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 packer-provisioner-shell plugin: [INFO] 145 bytes written for 'stdout'
+2021/01/05 17:52:42 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2021/01/05 17:52:42 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f /tmp/script_9802.sh
+2021/01/05 17:52:42 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f
+2021/01/05 17:52:42 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] RPC endpoint: Communicator ended with: 0
+2021/01/05 17:52:42 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/01/05 17:52:42 [INFO] (telemetry) ending shell
+2021/01/05 17:52:42 ui: [1;32m==> debian10.7: Gracefully halting virtual machine...[0m
+2021/01/05 17:52:42 packer-builder-qemu plugin: Executing shutdown command: echo 'vagrant' | sudo -S shutdown -P now
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/01/05 17:52:42 packer-builder-qemu plugin: [DEBUG] starting remote command: echo 'vagrant' | sudo -S shutdown -P now
+2021/01/05 17:52:43 packer-builder-qemu plugin: [ERROR] Remote command exited without exit status or exit signal.
+2021/01/05 17:52:43 packer-builder-qemu plugin: Waiting max 5m0s for shutdown to complete
+2021/01/05 17:52:45 packer-builder-qemu plugin: VM shut down.
+2021/01/05 17:52:45 ui: [1;32m==> debian10.7: Converting hard drive...[0m
+2021/01/05 17:52:45 packer-builder-qemu plugin: Executing qemu-img: []string{"convert", "-c", "-O", "qcow2", "builds/debian10.7/packer-debian10.7", "builds/debian10.7/packer-debian10.7.convert"}
+2021/01/05 17:58:12 packer-builder-qemu plugin: stdout:
+2021/01/05 17:58:12 packer-builder-qemu plugin: stderr:
+2021/01/05 17:58:13 packer-builder-qemu plugin: failed to unlock port lockfile: close tcp 127.0.0.1:5944: use of closed network connection
+2021/01/05 17:58:13 packer-builder-qemu plugin: failed to unlock port lockfile: close tcp 127.0.0.1:2225: use of closed network connection
+2021/01/05 17:58:13 [INFO] (telemetry) ending qemu
+2021/01/05 17:58:13 ui: [1;32m==> debian10.7: Running post-processor: vagrant[0m
+2021/01/05 17:58:13 [INFO] (telemetry) Starting post-processor vagrant
+2021/01/05 17:58:13 ui: [1;32m==> debian10.7 (vagrant): Creating a dummy Vagrant box to ensure the host system can create one correctly[0m
+2021/01/05 17:58:13 packer-post-processor-vagrant plugin: Turning dir into box: /tmp/packer688422779 => /tmp/box-039580318.box
+2021/01/05 17:58:13 packer-post-processor-vagrant plugin: Compressing with gzip compression level: -1
+2021/01/05 17:58:13 packer-post-processor-vagrant plugin: Skipping directory '/tmp/packer688422779' for box '/tmp/box-039580318.box'
+2021/01/05 17:58:13 packer-post-processor-vagrant plugin: Box add: '/tmp/packer688422779/metadata.json' to '/tmp/box-039580318.box'
+2021/01/05 17:58:13 ui: [1;32m==> debian10.7 (vagrant): Creating Vagrant box for 'libvirt' provider[0m
+2021/01/05 17:58:13 ui: [0;32m    debian10.7 (vagrant): Copying from artifact: builds/debian10.7/packer-debian10.7[0m
+2021/01/05 17:58:14 packer-post-processor-vagrant plugin: Turning dir into box: /tmp/packer939369829 => builds/debian-10.7-amd64-libvirt.box
+2021/01/05 17:58:14 packer-post-processor-vagrant plugin: Compressing with gzip compression level: -1
+2021/01/05 17:58:14 packer-post-processor-vagrant plugin: Skipping directory '/tmp/packer939369829' for box 'builds/debian-10.7-amd64-libvirt.box'
+2021/01/05 17:58:14 packer-post-processor-vagrant plugin: Box add: '/tmp/packer939369829/Vagrantfile' to 'builds/debian-10.7-amd64-libvirt.box'
+2021/01/05 17:58:14 ui: [0;32m    debian10.7 (vagrant): Compressing: Vagrantfile[0m
+2021/01/05 17:58:14 packer-post-processor-vagrant plugin: Box add: '/tmp/packer939369829/box.img' to 'builds/debian-10.7-amd64-libvirt.box'
+2021/01/05 17:58:14 ui: [0;32m    debian10.7 (vagrant): Compressing: box.img[0m
+2021/01/05 17:58:16 packer-post-processor-vagrant plugin: Box add: '/tmp/packer939369829/metadata.json' to 'builds/debian-10.7-amd64-libvirt.box'
+2021/01/05 17:58:16 ui: [0;32m    debian10.7 (vagrant): Compressing: metadata.json[0m
+2021/01/05 17:58:16 [INFO] (telemetry) ending vagrant
+2021/01/05 17:58:16 Flagging to keep original artifact from post-processor 'vagrant'
+2021/01/05 17:58:16 ui: [1;32mBuild 'debian10.7' finished after 27 minutes 4 seconds.[0m
+2021/01/05 17:58:16 ui: 
+==> Wait completed after 27 minutes 4 seconds
+2021/01/05 17:58:16 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2021/01/05 17:58:16 machine readable: debian10.7,artifact-count []string{"2"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "builder-id", "transcend.qemu"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "id", "VM"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "string", "VM files in directory: builds/debian10.7"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "files-count", "1"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "file", "0", "builds/debian10.7/packer-debian10.7"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"0", "end"}
+2021/01/05 17:58:16 ui: --> debian10.7: VM files in directory: builds/debian10.7
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "builder-id", "mitchellh.post-processor.vagrant"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "id", "libvirt"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "string", "'libvirt' provider box: builds/debian-10.7-amd64-libvirt.box"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "files-count", "1"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "file", "0", "builds/debian-10.7-amd64-libvirt.box"}
+2021/01/05 17:58:16 machine readable: debian10.7,artifact []string{"1", "end"}
+2021/01/05 17:58:16 ui: --> debian10.7: 'libvirt' provider box: builds/debian-10.7-amd64-libvirt.box
+2021/01/05 17:58:16 [INFO] (telemetry) Finalizing.
+2021/01/05 17:58:17 waiting for all plugin processes to complete...
+2021/01/05 17:58:17 /usr/bin/packer: plugin process exited
+2021/01/05 17:58:17 /usr/bin/packer: plugin process exited
+2021/01/05 17:58:17 /usr/bin/packer: plugin process exited
+2021/01/05 17:58:17 /usr/bin/packer: plugin process exited
+2021/01/05 17:58:17 /usr/bin/packer: plugin process exited

@@ -32,5 +32,19 @@ vagrant plugin install vagrant-libvirt
 ## vagrant 常用命令
 
 - vagrant box add <boxname> <boxpath>
-- vagrant init
+- vagrant init <boxname>
+
+- modify vagrantfile
+
+```bash
+    Vagrant.configure('2') do |config|
+        config.vm.box = "precise64"
+        config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+        config.vm.hostname = "buzbar"
+        config.vm.define "foohost"
+        config.vm.provider :libvirt do |vb|
+            vb.name = "barhost"
+        end
+    end
+```
 - vagrant up

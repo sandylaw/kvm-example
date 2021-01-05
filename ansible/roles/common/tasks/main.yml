@@ -1,85 +1,4 @@
 ---
-- name: Centos Tweaking
-  block:
-    - name: Install NetworkManager-tui
-      package:
-        name: NetworkManager-tui
-        state: present
-    - name: enable NetworkManager service
-      systemd:
-        name: NetworkManager
-        enabled: yes
-
-    - name: Blacklist modules
-      copy:
-        src: blacklist.conf.centos
-        dest: /etc/modprobe.d/blacklist.conf
-        mode: '0644'
-        owner: root
-        group: root
-        backup: no
-
-    - name: disable, mask and stop kdump service
-      systemd:
-        name: kdump
-        enabled: no
-        masked: no
-        state: stopped
-      when: ansible_distribution == 'CentOS'
-
-    - name: Configure GRUB to enable serial console
-      copy:
-        src: grub.centos
-        dest: /etc/default/grub
-        mode: '0644'
-        owner: root
-        group: root
-        backup: no
-
-    - name: Regenerate GRUB configuration
-      command: "/usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg"
-
-    - name: Enable EPEL Repository on CentOS 8
-      dnf:
-        name: epel-release
-        state: present
-      when: ansible_facts['distribution_major_version'] == '8'
-    - name: Enable EPEL Repository on CentOS 7
-      yum:
-        name: epel-release
-        state: present
-      when: ansible_facts['distribution_major_version'] == '7'
-
-    - name: Install Cloud-init
-      yum:
-        name: cloud-init
-        state: present
-
-    - name: upgrade all packages
-      yum:
-        name: '*'
-        state: latest # noqa 403
-
-    - name: yum clean all
-      command: yum clean all # noqa 303
-  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Fedora'
-
-- name: Ubuntu latest packages update/upgrade and clean
-  block:
-    - name: Update all packages to the latest version
-      apt:
-        upgrade: dist
-    - name: Run the equivalent of "apt-get update" as a separate step
-      apt:
-        update_cache: yes
-    - name: Remove useless packages from the cache
-      apt:
-        autoclean: yes
-    - name: Remove dependencies that are no longer required
-      apt:
-        autoremove: yes
-  when: ansible_distribution == 'Ubuntu' and ubuntu1804.fullupgrade|default(False)
-
 - name: Configure GRUB to enable serial console on Debian/Ubuntu
   copy:
     src: grub.ubuntu
@@ -127,17 +46,54 @@
     regexp: ".*UseDNS.*"
     line: "UseDNS no"
 
+- name: Add python symlink
+  file:
+    src: "/usr/bin/python3"
+    dest: "/usr/bin/python"
+    state: link
+    mode: 0777
+
+#- name: Set apt repositories
+#  apt_repository:
+#    repo: "{{ item }}"
+#    state: present
+#    mode: 0644
+#  loop: "{{ debian_repo }}"
+#  tags:
+#    - debianrepo
+#  when: ansible_distribution == 'Debian'
+
+- name: Upgrade base system
+  apt:
+    update_cache: yes
+    upgrade: dist
+  when: ansible_distribution == 'Debian'
+
+- name: Install backports linux-image-latest
+  apt:
+    name: linux-image-amd64
+    state: latest
+    default_release: buster-backports
+    update_cache: yes
+  when: ansible_distribution == 'Debian'
+
 - name: Install common packages
   package:
-    name: "{{ item }}"
+    name: "{{ common_packages }}"
     state: present
-  loop: "{{ common_packages }}"
+    allow_unauthenticated: yes
+    autoremove: yes
+    force_apt_get: yes
+    install_recommends: no
 
 - name: Install Debian10 packages
   package:
-    name: "{{ item }}"
+    name: "{{ debian10 }}"
     state: present
-  loop: "{{ debian10 }}"
+    allow_unauthenticated: yes
+    autoremove: yes
+    force_apt_get: yes
+    install_recommends: no
 
 - name: Mask system services
   systemd:
@@ -185,11 +141,3 @@
     remote_src: yes
   tags:
     - autostart
-
-- name: Add python symlink
-  file:
-    src: "/usr/bin/python3"
-    dest: "/usr/bin/python"
-    state: link
-    mode: 0777
-

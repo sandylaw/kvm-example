@@ -1,4 +1,11 @@
 ---
+repo_base: "https://mirrors.ustc.edu.cn"
+debian_codename: "buster"
+debian_repo:
+  - "deb {{ repo_base }}/debian {{ debian_codename }} main contrib non-free"
+  - "deb-src {{ repo_base }}/debian {{ debian_codename }} main contrib non-free"
+  - "deb {{ repo_base }}/debian {{ debian_codename }}-backports main contrib non-free"
+  - "deb-src {{ repo_base }}/debian {{ debian_codename }}-backports main contrib non-free"
 
 common_packages:
   - htop
@@ -7,6 +14,7 @@ common_packages:
   - network-manager
   - pavucontrol
   - plymouth
+  - xorg
   - lightdm
   - lightdm-gtk-greeter
   - lxterminal
