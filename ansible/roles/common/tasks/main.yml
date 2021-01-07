@@ -35,10 +35,13 @@
 
 - name: Add local pub key to authorized_keys
   authorized_key:
-    user: root
+    user: "{{ item }}"
     key: "{{ lookup('file', 'id_rsa.pub') }}"
-#    key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
+    # key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
     state: present
+  loop:
+    - root
+    - vagrant
 
 - name: Tweak sshd_config
   lineinfile:
@@ -69,10 +72,10 @@
     upgrade: dist
   when: ansible_distribution == 'Debian'
 
-- name: Install backports linux-image-latest
+- name: Upgrade backports linux-image-latest
   apt:
     name: linux-image-amd64
-    state: latest
+    state: latest # noqa 403
     default_release: buster-backports
     update_cache: yes
   when: ansible_distribution == 'Debian'
@@ -141,3 +144,31 @@
     remote_src: yes
   tags:
     - autostart
+
+- name: Add the user 'vagrant' to sudo group
+  user:
+    name: vagrant
+    shell: /bin/bash
+    groups: sudo
+    append: yes
+
+- name: Make sure we have a 'wheel' group
+  group:
+    name: wheel
+    state: present
+
+- name: Allow 'wheel' group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+
+- name: Add sudoers users to wheel group
+  user:
+    name=vagrant
+    groups=wheel
+    append=yes
+    state=present
+    createhome=yes

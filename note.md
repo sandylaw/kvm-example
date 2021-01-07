@@ -22,6 +22,20 @@ vagrant plugin install vagrant-libvirt
 ```
 > $(lsb_release -cs) can be 'buster'
 
+## Customize SSH keys
+
+To generate the ssh keys for provisionning and put it in the sshkeys/ folder :
+
+    ssh-keygen -q -t rsa -N '' -C 'packer-kvm-default-key' -f sshkeys/id_rsa
+
+To get the default ssh private key :
+
+    curl https://raw.githubusercontent.com/goffinet/packer-kvm/master/sshkeys/id_rsa
+
+To get the default ssh public key :
+
+    curl https://raw.githubusercontent.com/goffinet/packer-kvm/master/sshkeys/id_rsa.pub
+
 ## packer 常用命令
 
 - packer -h
